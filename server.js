@@ -4,7 +4,7 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log('CD/CI');
+    console.log('Travis Work !');
     await sleep(5000);
   }
 }
