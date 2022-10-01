@@ -4,7 +4,7 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log('Travis Work, yeh!');
+    console.log('$DOCKER_USERNAME');
     await sleep(5000);
   }
 }
