@@ -1,7 +1,7 @@
 pipeline{
            agent any
            environment {
-                      DOCKERHUB_CREDENTIALS=credentials('alolo1001') # the ID of the docker credentials that you created in step 5
+                      DOCKERHUB_CREDENTIALS=credentials('dockerhub') # the ID of the docker credentials that you created in step 5
             }
            stages {
                 stage('Build') {
