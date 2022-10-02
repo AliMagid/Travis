@@ -6,17 +6,17 @@ pipeline{
            stages {
                 stage('Build') {
                         steps {
-                              sh 'docker build -t alolo1001/jenkins:latest .' 
+                              sh 'sudo docker build -t alolo1001/jenkins:latest .' 
                               }
                   }
                 stage('Login') {
                         steps {
-                              sh 'echo $DOCKER_USERNAME | docker login -u $DOCKER_PASSWORD --password-stdin'
+                              sh 'echo $DOCKER_USERNAME | sudo docker login -u $DOCKER_PASSWORD --password-stdin'
                               }
                  }
                 stage('Push') {
                         steps {
-                              sh 'docker push alolo1001/jenkins:latest'
+                              sh 'sudo docker push alolo1001/jenkins:latest'
                               }
                 }
             }
